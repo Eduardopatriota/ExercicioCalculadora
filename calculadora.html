@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>    
+</head>
+
+<body>
+    
+<script>
+
+//Calculadora Primeira versão //
+
+
+let numero1 = parseInt(prompt('digite um numero'));
+let operacao = prompt('digite uma operação');
+let numero2 = parseInt(prompt('digite o segundo numero'));
+
+if(operacao === '+'){
+    document.write(numero1, ' mais ', numero2, ' = ', numero1 + numero2 );
+}
+else if(operacao === '-'){
+    document.write(numero1, ' menos ', numero2, ' = ', numero1 - numero2 );
+}
+else if(operacao === '*'){
+    document.write(numero1, ' multiplicado por ', numero2, ' = ', numero1 * numero2);
+}
+
+else if(operacao === '/'){
+    document.write(numero1, ' dividido por ', numero2, ' = ', numero1 / numero2 );
+}
+else{
+    document.write(`por favor escolha uma das 4 operações: <br>
+
+    mais + <br>
+    menos - <br>
+    multiplicação * <br>
+    divisão / `)
+}
+</script>
+
+</body>
+    
